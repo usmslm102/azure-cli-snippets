@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # azure-cli-snippets README
 
 This is the README for your extension "azure-cli-snippets". After writing up a brief description, we recommend including the following sections.
@@ -63,3 +64,6 @@ Added features X, Y, and Z.
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+=======
+# azure-cli-snippets
+>>>>>>> 0c8b3a091620167302018c3d987c50d6c6a9b70f
