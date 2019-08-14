@@ -1,0 +1,25 @@
+{
+  "name": "azure-cli-snippets",
+  "displayName": "Azure Cli Snippets",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.37.0"
+  },
+  "icon": "azure.png",
+  "repository": {
+    "url": "https://github.com/usmslm102/azure-cli-snippets"
+  },
+  "homepage": "https://github.com/usmslm102/azure-cli-snippets",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "powershell",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

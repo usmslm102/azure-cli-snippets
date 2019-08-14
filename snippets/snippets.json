@@ -1,0 +1,46 @@
+{
+  "Azure Login": {
+    "prefix": ["az-login"],
+    "body": ["az login"],
+    "description": "Azure Cli Log in interactively"
+  },
+  "Azure Login with username & password": {
+    "prefix": ["az-login-username-password"],
+    "body": ["az login -u ${1:johndoe@contoso.com} -p ${2:VerySecret}"],
+    "description": "Log in with user name and password. This doesn't work with Microsoft accounts or accounts that have two-factor authentication enabled"
+  },
+  "Azure Login with service principle": {
+    "prefix": ["az-login-service-principal"],
+    "body": [
+      "az login --service-principal -u http://azure-cli-2016-08-05-14-31-15 -p ${1:secret} --tenant ${2:contoso}.onmicrosoft.com"
+    ],
+    "description": "Log in with user name and password. This doesn't work with Microsoft accounts or accounts that have two-factor authentication enabled"
+  },
+  "Azure Account List": {
+    "prefix": ["az-account-list"],
+    "body": ["az account list [--all] [--refresh]"],
+    "description": "Get a list of subscriptions for the logged in account."
+  },
+  "Azure Account Clear": {
+    "prefix": ["az-account-clear"],
+    "body": ["az account clear"],
+    "description": "Clear all subscriptions from the CLI's local cache."
+  },
+  "Azure Account get-access-token": {
+    "prefix": ["az-account-get-access-token"],
+    "body": ["az account get-access-token"],
+    "description": "Get a token for utilities to access Azure."
+  },
+  "Azure Account list-locations": {
+    "prefix": ["az-account-list-locations"],
+    "body": ["az account list-locations"],
+    "description": "List supported regions for the current subscription."
+  },
+  "Azure Account set": {
+    "prefix": ["az-account-set"],
+    "body": [
+      "az account set --subscription \"${1:Name or ID of subscription}\""
+    ],
+    "description": "Set a subscription to be the current active subscription."
+  }
+}
