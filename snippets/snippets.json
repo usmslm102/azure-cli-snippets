@@ -42,5 +42,24 @@
       "az account set --subscription \"${1:Name or ID of subscription}\""
     ],
     "description": "Set a subscription to be the current active subscription."
+  },
+  "Azure Account Lock Creat readOnly": {
+    "prefix": ["az-account-lock-create-readyOnly"],
+    "body": [
+      "az account lock create --lock-type ReadOnly --name ${2:lockName}"
+    ],
+    "description": "Create a read-only subscription level lock."
+  },
+  "Azure Account Lock Creat CanNotDelete": {
+    "prefix": ["az-account-lock-create-canNotDelete"],
+    "body": [
+      "az account lock create --lock-type CanNotDelete --name ${2:lockName}"
+    ],
+    "description": "Create a CanNotDelete subscription level lock."
+  },
+  "Azure Account Lock Delete": {
+    "prefix": ["az-account-lock-delete"],
+    "body": ["az account lock delete --name ${2:lockName}"],
+    "description": "Delete a subscription lock"
   }
 }
